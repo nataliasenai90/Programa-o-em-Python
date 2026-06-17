@@ -7,6 +7,6 @@ aprovado = media >= 7
 recuperacao = media >= 5 and media < 7
 reprovado = media < 5
 
-mensagem = (media >= 7) and "Aprovado" or (media >= 5 and media < 7) and "Recuperação" or "Reprovado" 
+mensagem = aprovado and "Aprovado" or recuperacao and "Recuperação" or "Reprovado" 
 
 print(mensagem)
