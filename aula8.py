@@ -64,13 +64,13 @@ else:
 num = int(input('Digite um número: '))
 
 if num % 5 == 0 and num % 7 == 0:
-    print('Este número é múltiplo de 5 e de 7!')
+    print('Este número é múltiplo de 5 e de 7.')
 elif num % 5 == 0 and num % 7 != 0:
-    print('Este número é múltiplo de 5!')
+    print('Este número é múltiplo de 5.')
 elif num % 5 != 0 and num % 7 == 0:
-    print('Este número é múltiplo de 7!')
+    print('Este número é múltiplo de 7.')
 else:
-    print('Este número não é multiplo de 5 e nem de 7!')
+    print('Este número não é multiplo de 5 e nem de 7.')
 
 # -------------------------------------------------------------------------
 
@@ -96,10 +96,10 @@ else:
 number = int(input('Digite um número: '))
 
 if number % 3 == 0 and number % 5 == 0:
-    print('O número é divisível por 3 e por 5')
+    print('O número é divisível por 3 e por 5.')
 elif number % 3 == 0:
-    print('O número é divisível por 3')
+    print('O número é divisível por 3.')
 elif number % 5 == 0:
-    print('O número é divisível por 5')
+    print('O número é divisível por 5.')
 else: 
-    print('O número não é divisível por 3 e nem por 5')
+    print('O número não é divisível por 3 e nem por 5.')
