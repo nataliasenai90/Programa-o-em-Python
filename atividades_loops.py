@@ -53,16 +53,28 @@ for i in range(3):
                 nota2 = float(input('Digite a 2a nota: '))
                 nota3 = float(input('Digite a 3a nota: '))
                 media = (nota1 + nota2 + nota3) / 3
-                print(f'A média final do aluno {nome} é {media}')
+                print(f'A média final do aluno {nome} é {media}\n')
                 alunos.append({'nome': nome, 'media': media})
                 cont += 1
 
-            print(f'Lista de médias dos alunos:\n\n')
+            print(f'Lista de médias dos alunos:\n')
             
-            for x in alunos:
-                print(f'{x['nome']}: {x['media']}\n')
+            for i in alunos:
+                print(f'{i['nome']}: {i['media']}')
+
+            notas_turma = []
+
+            for j in alunos:
+                notas_turma.append(j['media'])
+            
+            media_turma = sum(notas_turma) / len(notas_turma)
+
+            print(f'''
+                  Média da turma:
+                  
+                  {media_turma}
+                  ''')        
 
 else:
     print('Conta bloqueada!')
     input('Digite enter para sair')
-
