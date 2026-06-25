@@ -54,10 +54,13 @@ for i in range(3):
                 nota3 = float(input('Digite a 3a nota: '))
                 media = (nota1 + nota2 + nota3) / 3
                 print(f'A média final do aluno {nome} é {media}')
-                alunos.append({nome: media})
+                alunos.append({'nome': nome, 'media': media})
                 cont += 1
+
+            print(f'Lista de médias dos alunos:\n\n')
             
-            print(f'Lista de médias dos alunos:\n{alunos}')
+            for x in alunos:
+                print(f'{x['nome']}: {x['media']}\n')
 
 else:
     print('Conta bloqueada!')
