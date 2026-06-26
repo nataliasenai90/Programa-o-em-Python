@@ -1,18 +1,19 @@
 # ***1*** 
 # ***CRIE UMA FUNÇÃO PARA COMPARAR 2 NÚMEROS (par ou impar). UTILIZE VARIÁVEIS LOCAIS.***
 
-def comparar(n1,n2):
-    if n1 % 2 == 0:
-        print(f'{n1} é número par.')
+def comparar():
+    n1 = int(input('Digite um número: '))
+    n2 = int(input('Digite outro número: '))
+    if n1 % 2 == 0 and n2 % 2 == 0:
+        print(f'Ambos os números são pares.')
+    elif n1 % 2 == 0 and n2 % 2 != 0:
+        print(f'Apenas {n1} é número par.')
+    elif n1 % 2 != 0 and n2 % 2 == 0:
+        print(f'Apenas {n2} é número par.')
     else:
-        print(f'{n1} é número ímpar.')
-    
-    if n2 % 2 == 0:
-        print(f'{n2} é número par.')
-    else:
-        print(f'{n2} é número ímpar.')
+        print(f'Nenhum dos números são pares.')
 
-comparar(3,4)
+comparar()
 
 # ***2***
 # ***CRIE UMA FUNÇÃO PARA MULTIPLICAR 3 NUMEROS.***
