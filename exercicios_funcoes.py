@@ -69,6 +69,9 @@ brasil_ganhou(1999)
 # ***7*** 
 # ***DESENVOLVA UM SISTEMA DE RESTAURANTE, ONDE O CLIENTE TEM OPÇÃO DE ESCOLHER ENTRE SALADA, MACARRONADA, SANDUICHE, SORVETE.***
 
+def boas_vindas(nome):
+    print(f'Olá, {nome}! Bem-vindo(a) ao nosso restaurante!')
+
 def pedido_restaurante():
     pedido = []
 
@@ -86,6 +89,10 @@ def pedido_restaurante():
     if sorvete == 's' or sorvete == 'S':
         pedido.append('Sorvete')
     
-    print(f'Seu pedido é: {pedido}')
+    print(f'Seu pedido é: {pedido}. Bom apetite!')
 
-pedido_restaurante()
+def restaurante(nome):
+    boas_vindas(nome)
+    pedido_restaurante()
+
+restaurante('Natália')
