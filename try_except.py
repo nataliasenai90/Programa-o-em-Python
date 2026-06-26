@@ -1,12 +1,14 @@
 # Exercício 1:
 # Peça ao usuário para inserir um número e manipule a exceção caso ele insira algo que não seja um número inteiro.
 
-# try:
-#     num = int(input('Digite um número: '))
-# except:
-#     print('O valor digitado não é um número.')
-# else:
-#     print(f'Você digitou: {num}')
+try:
+    num = int(input('Digite um número: '))
+except ValueError:
+    print('O valor digitado não é um número inteiro.')
+except:
+    print('O valor digitado não é um número.')
+else:
+    print(f'Você digitou: {num}')
 
 
 # Exercício 2:
