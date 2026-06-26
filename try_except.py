@@ -19,6 +19,8 @@ try:
     div2 = int(input('Digite o divisor: '))
 
     q = div1 / div2
+    div_int = div1 // div2
+    resto = div1 % div2
 
 except ZeroDivisionError:
     print('Não pode dividir por 0.')
@@ -30,9 +32,9 @@ else:
     print(f'''Resultados da divisão: 
           - Dividendo: {div1}
           - Divisor: {div2}
-          - Quociente: {div1/div2}
-          - Divisão inteira: {div1//div2}
-          - Resto: {div1%div2}''')
+          - Quociente: {q}
+          - Divisão inteira: {div_int}
+          - Resto: {resto}''')
 
 
 # Exercício 3:
