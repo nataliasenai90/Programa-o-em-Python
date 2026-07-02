@@ -1,4 +1,4 @@
-from modulo_aula13 import num_pares, num_aleatorio, random_3, contagem_regressiva, tabuada, num_10_30
+from modulo_aula13 import num_pares, num_aleatorio, random_3, contagem_regressiva, tabuada, num_10_30, impares_reversos
 
 # 1 - Crie um número aleatório de 5,10
 num_aleatorio()
@@ -26,3 +26,7 @@ num_pares(n)
 # Peça ao usuário para inserir um número inteiro e mostre a tabuada de multiplicação desse número de 1 a 10. (while ou for)
 m = int(input('Qual tabuada você quer ver? '))
 tabuada(m)
+
+# 7 -  Números ímpares reversos
+# Exiba uma contagem regressiva de números ímpares de 99 a 1. (for)
+impares_reversos()
