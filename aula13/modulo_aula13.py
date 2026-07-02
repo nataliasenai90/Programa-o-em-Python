@@ -53,3 +53,9 @@ def tabuada(m):
         for x in tabuada_m:
             print(f'{m} x {j} = {x}')
             j += 1
+
+def impares_reversos():
+    lista = []
+    for x in range(99, 0, -1):
+        lista.append(x)
+    print(lista)
