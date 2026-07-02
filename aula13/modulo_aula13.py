@@ -1,23 +1,14 @@
 import random
 import time
 
-def num_pares(n):
-    lista_num = []
-
-    for x in range(2,n+1,2):
-        lista_num.append(x)
-
-    soma = sum(lista_num)
-    print(f'Números: {lista_num} | Soma dos números: {soma}')
-
 def num_aleatorio():
     print(random.randint(5,10))
 
-def num_10_30(lista):
-    print(random.randint(lista[0],lista[len(lista)-1]))
-
 def random_3():
     print(random.randint(0,100), random.randint(0,100), random.randint(0,100))
+
+def num_10_30(lista):
+    print(random.randint(lista[0],lista[len(lista)-1]))
 
 def contagem_regressiva():
 #     cont = 10
@@ -38,6 +29,15 @@ def contagem_regressiva():
         else:
             print(f'Fogo!')
             break
+
+def num_pares(n):
+    lista_num = []
+
+    for x in range(2,n+1,2):
+        lista_num.append(x)
+
+    soma = sum(lista_num)
+    print(f'Números: {lista_num} | Soma dos números: {soma}')
 
 def tabuada(m):
     i = 1
