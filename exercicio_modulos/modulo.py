@@ -21,10 +21,9 @@ def mediana(lista):
 
 def analise_dados(lista):
     print(f'''
-            
-            +++++++++++++++++++++++++++
-            Análise dos Salários
-            +++++++++++++++++++++++++++
+            ++++++++++++++++++++++++++++
+                Análise dos Salários    
+            ++++++++++++++++++++++++++++
             ''')
     i = 0
     while i < len(lista):
